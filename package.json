@@ -1,0 +1,22 @@
+{
+    "name": "trailingstop",
+    "version": "1.0.0",
+    "description": "trailingStop",
+    "main": "src/",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PsyTae/trailingStop.git"
+    },
+    "author": "Shaun Branham <Shaun.Branham@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PsyTae/trailingStop/issues"
+    },
+    "homepage": "https://github.com/PsyTae/trailingStop#readme"
+}
