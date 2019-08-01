@@ -1,21 +1,16 @@
+const cors = require('cors');
 const express = require('express');
 const app = express();
+const server = require('http').createServer(app);
 const bodyParser = require('body-parser');
-const cors = require('cors');
-
 const morgan = require('morgan');
 const port = process.env.PORT || 80;
 
+app.use(cors());
 // Middleware
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 app.use(bodyParser.json());
-app.use(cors());
-
-// app.get('/', (req, res) => {
-//     console.log('Root Accessed');
-//     res.send('Hello World!');
-// });
 
 const posts = require('./routes/api/posts');
 const stocks = require('./routes/api/stockInfo');
